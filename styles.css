@@ -1,0 +1,259 @@
+/* Variables globales */
+:root {
+   /*Tipografía*/
+   --fuente-principal: 'Inter', Arial, Helvetica, sans-serif;
+
+   /*Paleta cromática*/
+   --color-fondo-pagina: #ffffff;
+   --color-fondo-seccion: #fafbfc;
+   --color-texto-principal: #24292f;
+   --color-texto-secundario: #57606a;
+   --color-titulos: #0f172a;
+
+   /*Colores de marca y acentos*/
+   --color-violeta-marca: #5c27b0;
+   --color-magenta-destacado: #c026d3;
+   --color-azul-boton: #3b82f6;
+   --color-blanco: #ffffff;
+
+   /*Bordes y líneas*/
+   --color-borde-suave: #e1e4e8;
+   --color-borde-divisor: #f0f2f5;
+
+   /*Espaciados*/
+   --espacio-pequeno: 8px;
+   --espacio-mediano: 16px;
+   --espacio-grande: 24px;
+   --espacio-seccion: 80px;
+}
+
+/*Reset y modelo de caja*/
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   font-family: var(--fuente-principal);
+   background-color: var(--color-fondo-pagina);
+   color: var(--color-texto-principal);
+   line-height: 1.5;
+}
+
+/*Clases (colores, fondos y bordes)*/
+.fondo-blanco{background-color: var(--color-blanco);}
+.fondo-gris-claro{background-color: var(--color-fondo-seccion);}
+.fondo-violeta{background-color: var(--color-violeta-marca);}
+.fondo-azul{background-color: var(--color-azul-boton);}
+
+.texto-principal{color: var(--color-texto-principal);}
+.texto-secundario{color: var(--color-texto-secundario);}
+.texto-titulos{color:var(--color-titulos);}
+.texto-blanco{color:var(--color-blanco);}
+.texto-magenta{color:var(--color-magenta-destacado);}
+.texto-violeta{color:var(--color-violeta-marca);}
+
+.borde-tarjeta{
+   border: 1px solid var(--color-borde-suave);
+   border-radius: 12px;
+}
+.borde-divisor{border-top: 1px solid var(--color-borde-divisor);}
+.borde-avatar{border-radius: 50%;}
+.borde-boton{border-radius: 6px;}
+
+.texto-centrado{text-align: center;}
+.sin-subrayado{text-decoration: none;}
+
+/*Clases de estructura y layout*/
+.contenedor-principal{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 var(--espacio-grande);
+}
+
+/*Header*/
+.cabecera-fila {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.menu-navegacion {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   gap: 28px;
+}
+
+.boton-contacto {
+   padding: 10px 24px;
+   font-weight: 600;
+   font-size: 0.9rem;
+}
+
+/*Seccion Hero*/
+.sección-hero {
+   padding: 60px 0 var(--espacio-seccion) 0;
+}
+
+.hero-distribucion {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 48px;
+}
+
+.hero-columna-texto {
+   flex: 1;
+   max-width: 540px;
+}
+
+.hero-titulo {
+   font-size: 3rem;
+   font-weight: 800;
+   line-height: 1.15;
+   margin-bottom: var(--espacio-grande);
+}
+
+.hero-descripcion {
+   font-size: 1.1rem;
+   margin-bottom: 32px;
+   line-height: 1.6;
+}
+
+.boton-principal {
+   display: inline-block;
+   padding: 14px 28px;
+   font-weight: 600;
+   box-shadow: 0 4px 14px rgba(59,130,246,0.35);
+}
+
+.hero-columna-imagen {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+}
+
+.hero-columna-imagen img {
+   width: 100%;
+   max-width: 520px;
+   height:auto;
+   display: block;
+   object-fit: contain;
+}
+
+/* Sección Metodología / Servicios*/
+.seccion-metodologia {
+   padding: var(--espacio-seccion) 0;
+}
+
+.encabezado-seccion {
+   max-width: 700px;
+   margin: 0 auto 56px auto;
+}
+
+.rejilla-tarjetas-2-col {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: var(--espacio-grande);
+}
+
+.tarjeta-servicio {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   padding: 32px 28px;
+}
+
+.icono-tarjeta {
+   width: 54px;
+   height: 54px;
+   flex-shrink: 0;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/*Seccion Testimonios*/
+.seccion-testimonios {
+   padding: var(--espacio-seccion) 0;
+}
+
+.bloque-testimonio {
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative;
+   padding: 0 60px;
+}
+
+.fila-avatares {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   gap:var(--espacio-grande);
+   margin-top: var(--espacio-grande);
+}
+
+.avatar-item img {
+   width: 64px;
+   height: 64px;
+   object-fit: cover;
+   margin-bottom: var(--espacio-pequeno);
+}
+
+/*Seccion recursos destacados*/
+.seccion-recursos {
+   padding: var(--espacio-seccion) 0;
+}
+
+.rejilla-recursos-4-col {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: var(--espacio-grande);
+   margin-top: 48px;
+}
+
+.tarjeta-recurso {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.tarjeta-recurso img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: var(--espacio-mediano);
+}
+
+/*Footer*/
+
+.pie-pagina {
+   padding: 60px 0 30px 0;
+}
+
+.footer-columnas {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1.5fr;
+   gap: 48px;
+   margin-bottom: 48px;
+}
+
+.footer-columna ul {
+   lyst-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer-creditos {
+   padding-top: var(--espacion-grande);
+   font-size: 0.85rem;
+}
