@@ -1,337 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web sobre IK Developers</title>
+    <title>IK Developers - Software Development Company</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1><a href="#NombrePagina">Ik developers</a></h1>
-            <ul>
-                <li><a href="#Nosotros">About us</a></li>
-                <li><a href="#Servicios">Service</a></li>
-                <li><a href="#Casos">Case Studies</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#Trabajo">How it Works</a></li>
-                <li><a href="#Hire">Hire</a></li>
-            </ul>
-        </nav>
+    <header class="fondo-blanco borde-divisor sombra-cabecera">
+        <div class="contenedor-principal cabecera-fila">
+            <h1 class="logo-texto">
+                <a href="#NombrePagina" class="sin-subrayado texto-titulos">Ik developers</a>
+            </h1>
+            <nav>
+                <ul class="menu-navegacion">
+                    <li><a href="#Nosotros" class="navbar-link">About us</a></li>
+                    <li><a href="#Servicios" class="navbar-link">Services</a></li>
+                    <li><a href="#Casos" class="navbar-link">Case Studies</a></li>
+                    <li><a href="#Blog" class="navbar-link">Blog</a></li>
+                    <li><a href="#Trabajo" class="navbar-link">How it Works</a></li>
+                    <li><a href="#Hire" class="navbar-link">Hire</a></li>
+                </ul>
+            </nav>
+            <a href="#Contact" class="boton-contacto borde-boton sin-subrayado fondo-degradado texto-blanco">Contact us</a>
+        </div>
     </header>
 
     <main>
-        <div>
-            <div>
-                <h1>
-                    <span class="Normal">Great</span>
-                    <span class="Violeta">Product</span>
-                    <span class="Normal">is </span><br>
-                    <span class="Oscuro">built by great</span>
-                    <span class="Violeta">teams</span></br>
-                </h1>
-            </div>
+        <section class="seccion-hero fondo-blanco">
+            <div class="contenedor-principal hero-distribucion">
+                <div class="hero-columna-texto">
+                    <h1 class="hero-titulo texto-titulos">
+                        Great <span class="texto-degradado">Product</span> is <br>
+                        <span class="texto-negrita">built by great</span> <span class="texto-degradado">teams</span>
+                    </h1>
+                    <p class="hero-descripcion texto-secundario">
+                        We help build and manage a team of world-class developers to bring your vision to life.
+                    </p>
+                    <a href="#Contact" class="boton-principal borde-boton sin-subrayado fondo-azul texto-blanco">
+                        Let's get started!
+                    </a>
+                </div>
 
-            <div>
-                <p class="parrafo1">We help build and manage a team of world-class developers<br>
-                    to bring your vision to life
-                </p>
+                <div class="hero-columna-imagen">
+                    <img src="https://picsum.photos/id/1/600/400" alt="Equipo de desarrollo IK Developers" class="borde-tarjeta">
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/id/7/800/500" alt="Imagen1">
-            </div>
-            <button class="PrimerBoton">Let's get started!</button>
+        </section>
 
-            <div>
-                <div>
-                    <h2><span class="Linea 1">Why customers love</span> <br>
-                        <span class="Linea 2">working with us</span>
+        <section class="seccion-testimonios fondo-blanco">
+            <div class="contenedor-principal">
+                <div class="encabezado-seccion texto-centrado">
+                    <h2 class="texto-titulos">
+                        Why customers love <br>
+                        <span class="texto-negrita">working with us</span>
                     </h2>
                 </div>
 
-                <div>
-                    <p class="parrafo3">
-                        without any doubt I recommend Alcaline Solutions as one of <br>
-                        the best web design and digital marketing agencies. One of <br>
-                        the best agencies I've came across so far. Wouldn´t be <br>
-                        hesitated to introduce their work to someone else.
+                <div class="bloque-testimonio">
+                    <button class="flecha-btn" aria-label="Anterior">&larr;</button>
+                    <p class="cita-testimonio texto-secundario texto-centrado">
+                        Without any doubt I recommend Alcalite Solutions as one of the best web design and digital marketing agencies.
+                        One of the best agencies I've came across so far. Wouldn't be hesitated to introduce their work to someone else.
                     </p>
+                    <button class="flecha-btn" aria-label="Siguiente">&rarr;</button>
                 </div>
 
+                <div class="fila-avatares">
+                    <div class="avatar-item opacidad-baja">
+                        <img src="https://picsum.photos/id/64/100/100" alt="Cliente 1" class="borde-avatar">
+                        <div class="estrellas">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                        <p class="texto-titulos texto-negrita" style="font-size: 0.85rem;">Romeena De Silva</p>
+                        <p class="texto-secundario" style="font-size: 0.75rem;">Janet Cosmetics</p>
+                    </div>
+
+                    <div class="avatar-item opacidad-baja">
+                        <img src="https://picsum.photos/id/65/100/100" alt="Cliente 2" class="borde-avatar">
+                        <div class="estrellas">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                        <p class="texto-titulos texto-negrita" style="font-size: 0.85rem;">Romeena De Silva</p>
+                        <p class="texto-secundario" style="font-size: 0.75rem;">Janet Cosmetics</p>
+                    </div>
+
+                    <div class="avatar-item avatar-destacado">
+                        <div class="anillo-avatar">
+                            <img src="https://picsum.photos/id/1062/110/110" alt="Imran Khan" class="borde-avatar">
+                        </div>
+                        <div class="estrellas">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                        <p class="texto-violeta texto-negrita" style="font-size: 0.9rem;">Imran Khan</p>
+                        <p class="texto-secundario" style="font-size: 0.75rem;">Software Engineer</p>
+                    </div>
+
+                    <div class="avatar-item opacidad-baja">
+                        <img src="https://picsum.photos/id/338/100/100" alt="Cliente 4" class="borde-avatar">
+                        <div class="estrellas">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                        <p class="texto-titulos texto-negrita" style="font-size: 0.85rem;">Romeena De Silva</p>
+                        <p class="texto-secundario" style="font-size: 0.75rem;">Janet Cosmetics</p>
+                    </div>
+
+                    <div class="avatar-item opacidad-baja">
+                        <img src="https://picsum.photos/id/342/100/100" alt="Cliente 5" class="borde-avatar">
+                        <div class="estrellas">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                        <p class="texto-titulos texto-negrita" style="font-size: 0.85rem;">Romeena De Silva</p>
+                        <p class="texto-secundario" style="font-size: 0.75rem;">Janet Cosmetics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-metodologia fondo-gris-claro borde-divisor" id="Servicios">
+            <div class="contenedor-principal">
+                <div class="encabezado-seccion texto-centrado">
+                    <h2 class="texto-titulos">
+                        Our design and<br>
+                        <span class="texto-negrita">development approach</span>
+                    </h2>
+                </div>
+
+                <div class="rejilla-tarjetas-2-col">
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-1" src="https://picsum.photos/id/237/100/100" alt="Imagen de UX Driven Engineering">
+                        <div>
+                            <h3 class="titulo-servicio">UX Driven Engineering</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-titulos">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-2" src="https://picsum.photos/id/237/100/100" alt="Imagen de Developing Shared Understanding">
+                        <div>
+                            <h3 class="titulo-servicio">Developing Shared Understanding</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-acento-azul">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-3" src="https://picsum.photos/id/237/100/100" alt="Imagen de Proven Experience and Expertise">
+                        <div>
+                            <h3 class="titulo-servicio">Proven Experience and Expertise</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-acento-rosa">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-4" src="https://picsum.photos/id/237/100/100" alt="Imagen de Security and Intellectual Property">
+                        <div>
+                            <h3 class="titulo-servicio">Security &amp; Intellectual Property (IP)</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-acento-verde">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-5" src="https://picsum.photos/id/237/100/100" alt="Imagen de Code Reviews">
+                        <div>
+                            <h3 class="titulo-servicio">Code Reviews</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-acento-amarillo">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio fondo-blanco borde-tarjeta">
+                        <img class="icono-tarjeta icono-6" src="https://picsum.photos/id/237/100/100" alt="Imagen de Quality Assurance and Testing">
+                        <div>
+                            <h3 class="titulo-servicio">Quality Assurance &amp; Testing</h3>
+                            <p class="descripcion-servicio texto-secundario">
+                                Unlike other companies, we are a
+                                <span class="texto-magenta">UX first</span>
+                                development company. Projects are driven by designers and they make sure design and experiences translate to code.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-recursos fondo-blanco" id="Blog">
+            <div class="contenedor-principal">
+                <div class="encabezado-seccion texto-centrado">
+                    <h2 class="texto-titulos">
+                        Featured <br>
+                        <span class="texto-negrita">Resources</span>
+                    </h2>
+                </div>
+
+                <div class="rejilla-recursos-4-col">
+                    <div class="tarjeta-recurso">
+                        <img src="https://picsum.photos/id/119/400/250" alt="Recurso tecnológico 1">
+                        <h4 class="titulo-recurso texto-titulos">How to Build a Scalable Application up to 1 Million Users on AWS</h4>
+                        <div class="enlace-recurso-wrap">
+                            <a href="#" class="enlace-recurso">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-recurso">
+                        <img src="https://picsum.photos/id/180/400/250" alt="Recurso tecnológico 2">
+                        <h4 class="titulo-recurso texto-titulos">How to Build a Scalable Application up to 1 Million Users on AWS</h4>
+                        <div class="enlace-recurso-wrap">
+                            <a href="#" class="enlace-recurso">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-recurso">
+                        <img src="https://picsum.photos/id/3/400/250" alt="Recurso tecnológico 3">
+                        <h4 class="titulo-recurso texto-titulos">How to Build a Scalable Application up to 1 Million Users on AWS</h4>
+                        <div class="enlace-recurso-wrap">
+                            <a href="#" class="enlace-recurso">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-recurso">
+                        <img src="https://picsum.photos/id/20/400/250" alt="Recurso tecnológico 4">
+                        <h4 class="titulo-recurso texto-titulos">How to Build a Scalable Application up to 1 Million Users on AWS</h4>
+                        <div class="enlace-recurso-wrap">
+                            <a href="#" class="enlace-recurso">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina fondo-gris-claro borde-divisor" id="Contact">
+        <div class="contenedor-principal footer-columnas">
+            <div class="footer-columna">
+                <h3 class="logo-texto">Ik developers</h3>
+                <p class="texto-secundario footer-descripcion">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
             </div>
 
-            <button class="flecha izquierda">&larr;</button><br>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/64/200/200" alt="RetratoPersona">
-                </div>
-                <div class="clasificacion1">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                </div>
-                <div>
-                    <p class="Nombre"> Romeena De Silva</p>
-                </div>
-                <div>
-                    <p class="puesto"> Janet Cosmetics</p>
-                </div>
-
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/64/200/200" alt="RetratoPersona">
-                </div>
-                <div class=" clasificacion2">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                </div>
-                <div>
-                    <p class="Nombre"> Romeena De Silva</p>
-                </div>
-                <div>
-                    <p class="puesto"> Janet Cosmetics</p>
-                </div>
-
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/64/200/200" alt="RetratoPersona">
-                </div>
-                <div class="clasificacion3">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                </div>
-                <div>
-                    <p class="Nombre"> Imran Khan</p>
-                </div>
-                <div>
-                    <p class="puesto"> Software Engineer</p>
-                </div>
-
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/64/200/200" alt="RetratoPersona">
-                </div>
-                <div class="clasificacion4">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                </div>
-                <div>
-                    <p class="Nombre"> Romeena De Silva</p>
-                </div>
-                <div>
-                    <p class="puesto"> Janet Cosmetics</p>
-                </div>
-
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/64/200/200" alt="RetratoPersona">
-                </div>
-                <div class="clasificacion5">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                </div>
-                <div>
-                    <p class="Nombre"> Romeena De Silva</p>
-                </div>
-                <div>
-                    <p class="puesto"> Janet Cosmetics</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div>
-            <h1 class="titulo2">Our design and <br>
-                <span class="negrita">development approach</span>
-            </h1>
-
-            <div>
-                <h2 class="cuadro">UX Driven Engineering </h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono1">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-            <div>
-                <h2 class="cuadro">Proven Experience and Expertise </h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono2">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-            <div>
-                <h2 class="cuadro">Code Reviews</h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono3">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-            <div>
-                <h2 class="cuadro">Developing Shared Understandign</h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono4">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-            <div>
-                <h2 class="cuadro">Security & Intellectual Property (IP)</h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono5">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-            <div>
-                <h2 class="cuadro">Quality Assurance & Testing</h2>
-                <p class="parrafocuadro">Unlike other companies, we are a <span class="Tono6">UX first</span>
-                    developpment company. <br>
-                    Projects are driven by designers and the make sure design and <br>
-                    experiences translate to code.</p>
-                <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="cuadroimagen">
-                </div>
-
-            </div>
-
-
-
-
-        </div>
-
-        <div>
-            <div>
-                <h1 class="titulo3">Featured<br>
-                    <span class="negrita1">Resources</span>
-                </h1>
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/238/100/100" alt="cuadroimagen">
-                </div>
-                <p class="cuadroFinal">How to Build a Scalable <br>
-                    Aplication up to 1 Millon Users<br>
-                    on AWS</p>
-                <button>Read More &rarr;</button>
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/238/100/100" alt="cuadroimagen">
-                </div>
-                <p class="cuadroFinal">How to Build a Scalable <br>
-                    Aplication up to 1 Millon Users<br>
-                    on AWS</p>
-                <button>Read More &rarr;</button>
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/238/100/100" alt="cuadroimagen">
-                </div>
-                <p class="cuadroFinal">How to Build a Scalable <br>
-                    Aplication up to 1 Millon Users<br>
-                    on AWS</p>
-                <button>Read More &rarr;</button>
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/id/238/100/100" alt="cuadroimagen">
-                </div>
-                <p class="cuadroFinal">How to Build a Scalable <br>
-                    Aplication up to 1 Millon Users<br>
-                    on AWS</p>
-                <button>Read More &rarr;</button>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <h2 class="Fin1">Ik developers</h2>
-                <p class="ParrafoFinal">Lorem Ipsum is simply dummy text of the <br>
-                    printing and typesetting industry.</p>
-            </div>
-
-            <div>
-                <h2 class="Fin2">Links</h2>
-                <ul class="ListaFinal">
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Case Studies</li>
-                    <li>How it works</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                    <li>Areas We Serve</li>
+            <div class="footer-columna">
+                <h4 class="texto-titulos footer-titulo-columna">Links</h4>
+                <ul>
+                    <li><a href="#Nosotros">About Us</a></li>
+                    <li><a href="#Servicios">Services</a></li>
+                    <li><a href="#Casos">Case Studies</a></li>
+                    <li><a href="#Trabajo">How it works</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Careers">Careers</a></li>
+                    <li><a href="#Areas">Areas We Serve</a></li>
                 </ul>
             </div>
 
-            <div>
-                <h2 class="Fin3">Contact Us</h2>
-                <p class="ParrafoFinal2">Lorem Ipsum is simply dummy text <br>
-                    of theprinting and typesetting<br> industry.</p>
-                <p class="NumeroTelefonico">+923183561921</p>
+            <div class="footer-columna">
+                <h4 class="texto-titulos footer-titulo-columna">Contact Us</h4>
+                <p class="texto-secundario footer-descripcion">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <p class="texto-secundario footer-telefono">+923183561921</p>
             </div>
 
+            <div class="footer-columna">
+                <div class="iconos-redes">
+                    <a href="#" class="btn-red-social"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="btn-red-social"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="btn-red-social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="btn-red-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <p class="Derechos">© 2023 Copyright by IK Developers. All Rights Reserved</p>
+        <div class="contenedor-principal footer-creditos texto-centrado borde-divisor fondo-blanco">
+            <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
         </div>
-
-
-    </main>
-
+    </footer>
 </body>
-
 </html>
