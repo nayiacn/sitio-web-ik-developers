@@ -381,19 +381,23 @@ body {
 }
 
 .anillo-avatar {
-   padding: 3px;
+   position: relative;
+   width: 68px;
+   height: 68px;
    border-radius: 100%;
-   background: transparent;
    display: inline-block;
    margin-bottom: var(--espacio-pequeno);
-   box-shadow: 0 0 14px rgba(15, 23, 42, 0.12);
+   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.11); 
 }
 
 .anillo-avatar img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   display: block;
    margin-bottom: 0;
    border: none;
-   width: 68px;
-   height: 68px;
 }
 
 /*Seccion recursos destacados*/
@@ -485,6 +489,12 @@ body {
    color: var(--color-violeta-marca);
 }
 
+.footer-columnas .footer-columna:last-child {
+   display: flex;
+   align-items: flex-end;  
+   justify-content: flex-end; 
+}
+
 .footer-descripcion {
    font-size: 1.0rem;
    margin-top: 14px;
@@ -511,7 +521,6 @@ body {
    width: 36px;
    height: 36px;
    border-radius: 50%;
-   border: 1px solid var(--color-borde-suave);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -519,6 +528,9 @@ body {
    text-decoration: none;
    font-size: 0.9rem;
    transition: all 0.2s ease;
+   border: none;
+   background: #ffffff;
+   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.13);
 }
 
 .btn-red-social:hover {
